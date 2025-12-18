@@ -6,6 +6,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxt/image'],
   nitro: {
-    preset: 'cloudflare_pages',
+    preset: 'cloudflare_module',
   },
 })
