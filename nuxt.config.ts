@@ -9,18 +9,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   nitro: {
-    preset: 'cloudflare_module',
-    cloudflare: {
-      deployConfig: true,
-      wrangler: {
-        d1_databases: [
-          {
-            binding: 'DB',
-            database_name: 'nuxt-test-db',
-            database_id: 'd203a824-37f4-43a1-812e-8427154a73a2'
-          }
-        ]
-      },
-    },
+    preset: 'cloudflare_pages',
   },
 })
