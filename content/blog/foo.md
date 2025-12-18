@@ -16,7 +16,3 @@ fdsafdsafdsadfsfdsafdsa
 ::test{type="warning"}
 Default slot content
 ::
-
-::test
-fdsafdsafsda
-::
