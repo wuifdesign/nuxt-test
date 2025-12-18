@@ -4,5 +4,8 @@ import defineCollection from '@nuxt/content';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/image']
+  modules: ['@nuxt/content', '@nuxt/image'],
+  nitro: {
+    preset: 'cloudflare-pages'
+  }
 })

@@ -8,7 +8,7 @@
         <li><NuxtLink to="/about">About</NuxtLink></li>
       </ul>
     </nav>
-    <RouterView />
+    <NuxtPage />
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
     <NuxtTime :datetime="Date.now()" />
