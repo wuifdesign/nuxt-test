@@ -3,5 +3,7 @@ const { data } = await useFetch('https://dummyjson.com/quotes/random')
 </script>
 
 <template>
-  Index Page {{ data }}
+  <div>
+    Index Page {{ data }}
+  </div>
 </template>
