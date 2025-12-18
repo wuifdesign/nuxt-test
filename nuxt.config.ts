@@ -6,6 +6,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxt/image'],
   nitro: {
-    preset: 'cloudflare_pages',
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: true,
+      wrangler: {
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: 'nuxt-test-db',
+            database_id: 'd203a824-37f4-43a1-812e-8427154a73a2'
+          }
+        ]
+      },
+    },
   },
 })
