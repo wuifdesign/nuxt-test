@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useFetch('https://dummyjson.com/quotes/random')
+const { data } = await useFetch('/api/quote')
 </script>
 
 <template>
