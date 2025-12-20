@@ -1,0 +1,3 @@
+kv_namespaces = [
+  { binding = "MY_KV", id = "b63b8618d8934195af9da658c655c5fc" }
+]

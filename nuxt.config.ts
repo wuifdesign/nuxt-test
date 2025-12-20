@@ -4,7 +4,7 @@ import defineCollection from '@nuxt/content';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/image', '@nuxthub/core'],
+  modules: ['@nuxt/content', '@nuxt/image'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       wrangler: {
+        kv_namespaces: [
+          {
+            binding: 'MY_KV',
+            id: 'b63b8618d8934195af9da658c655c5fc'
+          }
+        ],
         d1_databases: [
           {
             binding: 'DB',
@@ -23,10 +29,4 @@ export default defineNuxtConfig({
       },
     },
   },
-  hub: {
-    cache: {
-      driver: 'cloudflare-kv-binding',
-      namespaceId: 'b63b8618d8934195af9da658c655c5fc'
-    }
-  }
 })
