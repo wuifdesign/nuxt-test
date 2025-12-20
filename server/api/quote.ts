@@ -10,5 +10,5 @@ export default cachedEventHandler(async (event) => {
   maxAge: 10, // in sec
   staleMaxAge: 60, // serve stale while revalidating
   name: 'quote',
-  getKey: (event: H3Event) => event.path
+  getKey: (event: H3Event) => 'quote'
 })
