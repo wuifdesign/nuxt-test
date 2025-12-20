@@ -1,7 +1,7 @@
 import type { H3Event } from 'h3'
 
 export default cachedEventHandler(async (event) => {
-  const { MY_KV } = event.context.cloudflare.env
+  const MY_KV = event.context.cloudflare.env.MY_KV
 
   const key = 'v1:data'
   const cached = await MY_KV.get(key, { type: 'json' })
@@ -14,7 +14,7 @@ export default cachedEventHandler(async (event) => {
   const quote: any = await $fetch(`https://dummyjson.com/quotes/random`)
 
   await MY_KV.put(key, JSON.stringify(quote), {
-    expirationTtl: 10
+    expirationTtl: 60
   })
 
   return { source: 'fetch', data: quote }
