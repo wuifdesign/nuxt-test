@@ -1,7 +1,8 @@
 import type { H3Event } from 'h3'
+import type { KVNamespace } from '@cloudflare/workers-types'
 
 export default cachedEventHandler(async (event) => {
-  const MY_KV = event.context.cloudflare.env.MY_KV
+  const MY_KV = event.context.cloudflare.env.MY_KV as KVNamespace
 
   const key = 'v1:data'
   const cached = await MY_KV.get(key, { type: 'json' })
