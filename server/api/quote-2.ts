@@ -10,7 +10,6 @@ export default defineEventHandler(async (event) => {
   if (cached) {
     return { source: 'kv', data: cached }
   }
-  const value = await MY_KV.get('hello')
 
   const quote: any = await $fetch(`https://dummyjson.com/quotes/random`)
 
