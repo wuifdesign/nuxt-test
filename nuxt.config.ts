@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       { code: 'de', name: 'German', file: 'de.json' }
     ],
   },
+  routeRules: {
+    '/about': { swr: 5 },
+  },
   nitro: {
     preset: 'cloudflare_module',
     cloudflare: {
