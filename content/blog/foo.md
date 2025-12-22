@@ -13,6 +13,10 @@ This is Foo blog post.
 
 fdsafdsafdsadfsfdsafdsa
 
+::alert
+Alert content
+::
+
 ::test{type="warning"}
 Default slot content
 ::
