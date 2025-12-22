@@ -1,3 +1,7 @@
 {
-  "welcome": "Welcome"
+  "welcome": "Welcome",
+  "yes": "Yes",
+  "btn": {
+    "submit": "Submit"
+  }
 }

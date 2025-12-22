@@ -9,6 +9,8 @@ const { locales, setLocale } = useI18n()
       {{ locale.name }}
     </button>
     <h1>{{ $t('welcome') }}</h1>
+    <h1>{{ $t('btn.submit') }}</h1>
+    <h1>{{ $t('yes') }}</h1>
     Index Page {{ data }}
   </div>
 </template>

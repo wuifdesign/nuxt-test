@@ -12,8 +12,9 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'nl', name: 'Nederlands', file: 'nl.json' }
-    ]
+      { code: 'nl', name: 'Nederlands', file: 'nl.json' },
+      { code: 'de', name: 'German', file: 'de.json' }
+    ],
   },
   nitro: {
     preset: 'cloudflare_module',

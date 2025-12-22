@@ -1,3 +1,7 @@
 {
-  "welcome": "Welkom"
+  "welcome": "Welkom",
+  "yes": "",
+  "btn": {
+    "submit": ""
+  }
 }
