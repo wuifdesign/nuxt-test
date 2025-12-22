@@ -4,7 +4,7 @@ import defineCollection from '@nuxt/content';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['@nuxt/content', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/mdc'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -18,8 +18,6 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/about': { swr: 5 },
-    '/about-2': { isr: 5 },
-    '/about-3': { noScripts: true },
   },
   nitro: {
     preset: 'cloudflare_module',
