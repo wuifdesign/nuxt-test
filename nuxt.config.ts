@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/about': { swr: 5 },
     '/about-2': { isr: 5 },
+    '/about-3': { noScripts: true },
   },
   nitro: {
     preset: 'cloudflare_module',
