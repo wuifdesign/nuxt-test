@@ -13,10 +13,10 @@ useHead(() => ({
     <div>
       <nav>
         <ul>
-          <li><NuxtLink to="/">Index</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/about-2">About 2</NuxtLink></li>
-          <li><NuxtLink to="/about-3">About 3</NuxtLink></li>
+          <li><NuxtLink class="underline text-blue-500" to="/">Index</NuxtLink></li>
+          <li><NuxtLink class="underline text-blue-500" to="/about">About</NuxtLink></li>
+          <li><NuxtLink class="underline text-blue-500" to="/about-2">About 2</NuxtLink></li>
+          <li><NuxtLink class="underline text-blue-500" to="/about-3">About 3</NuxtLink></li>
         </ul>
       </nav>
       <NuxtLoadingIndicator />

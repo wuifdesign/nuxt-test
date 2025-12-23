@@ -1,10 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import defineCollection from '@nuxt/content';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/mdc'],
+  css: ['./app/assets/css/main.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
