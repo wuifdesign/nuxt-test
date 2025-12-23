@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   i18n: {
-    baseUrl: 'https://localhost:8000/',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL,
     defaultLocale: 'en',
     locales: [
       { code: 'en', language: 'en', name: 'English', file: 'en.json' },
