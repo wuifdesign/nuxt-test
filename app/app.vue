@@ -22,7 +22,6 @@ useHead(() => ({
       <NuxtLoadingIndicator />
       <NuxtPage />
       <NuxtRouteAnnouncer />
-      <NuxtWelcome />
       <NuxtTime :datetime="Date.now()" />
     </div>
   </NuxtLayout>
