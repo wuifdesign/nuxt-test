@@ -9,20 +9,23 @@ useHead(() => ({
 }))
 </script>
 <template>
-  <div>
-    <nav>
-      <ul>
-        <li><NuxtLink to="/">Index</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-        <li><NuxtLink to="/about-2">About 2</NuxtLink></li>
-        <li><NuxtLink to="/about-3">About 3</NuxtLink></li>
-      </ul>
-    </nav>
-    <NuxtPage />
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-    <NuxtTime :datetime="Date.now()" />
-  </div>
+  <NuxtLayout>
+    <div>
+      <nav>
+        <ul>
+          <li><NuxtLink to="/">Index</NuxtLink></li>
+          <li><NuxtLink to="/about">About</NuxtLink></li>
+          <li><NuxtLink to="/about-2">About 2</NuxtLink></li>
+          <li><NuxtLink to="/about-3">About 3</NuxtLink></li>
+        </ul>
+      </nav>
+      <NuxtLoadingIndicator />
+      <NuxtPage />
+      <NuxtRouteAnnouncer />
+      <NuxtWelcome />
+      <NuxtTime :datetime="Date.now()" />
+    </div>
+  </NuxtLayout>
 </template>
 
 <style>
