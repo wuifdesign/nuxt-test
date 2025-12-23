@@ -9,11 +9,12 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   i18n: {
+    baseUrl: 'https://localhost:8000/',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'nl', name: 'Nederlands', file: 'nl.json' },
-      { code: 'de', name: 'German', file: 'de.json' }
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
+      { code: 'nl', language: 'nl', name: 'Nederlands', file: 'nl.json' },
+      { code: 'de', language: 'de', name: 'German', file: 'de.json' }
     ],
   },
   routeRules: {

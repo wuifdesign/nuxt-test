@@ -7,5 +7,7 @@ Hello MDC
 </script>
 
 <template>
-  <MDC :value="md" tag="article" />
+  <div>
+    <MDC :value="md" tag="article" />
+  </div>
 </template>
